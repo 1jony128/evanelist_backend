@@ -21,11 +21,11 @@ export class UsersService {
   async createUser(dto: CreateUserDto) {
     const user = await this.userRepository.create(dto);
     const role = await this.roleService.getRoleByValue("ADMIN");
-    console.log(role)
     await user.$set("roles", [role.id]);
     user.roles = [role];
     return user;
   }
+
 
   async getAllUsers() {
     return await this.userRepository.findAll({ include: { all: true } });

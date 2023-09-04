@@ -26,7 +26,7 @@ export class UsersController {
 
   constructor(private usersService: UsersService) { }
 
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   @ApiOperation({ summary: 'Создание пользователя' })
   @ApiResponse({ status: 200, type: User })
   @Post()
@@ -36,9 +36,9 @@ export class UsersController {
 
   @ApiOperation({ summary: 'Получить всех пользователей' })
   @ApiResponse({ status: 200, type: [User] })
-  // @Roles("ADMIN")
+  @Roles("ADMIN")
   @UseGuards(JwtAuthGuard)
-  // @UseGuards(RolesGuard)
+  @UseGuards(RolesGuard)
   @Get()
   getAll() {
     return this.usersService.getAllUsers();
