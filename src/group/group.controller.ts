@@ -20,7 +20,7 @@ import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 export class GroupController {
   constructor(private readonly groupService: GroupService) {}
 
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   @Post("create")
   create(@Body() createGroupDto: CreateGroupDto) {
     return this.groupService.create(createGroupDto);
