@@ -51,6 +51,7 @@ let UsersController = class UsersController {
     }
 };
 __decorate([
+    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     swagger_1.ApiOperation({ summary: 'Создание пользователя' }),
     swagger_1.ApiResponse({ status: 200, type: users_model_1.User }),
     common_1.Post(),

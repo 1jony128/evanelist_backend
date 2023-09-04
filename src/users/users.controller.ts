@@ -26,7 +26,7 @@ export class UsersController {
 
   constructor(private usersService: UsersService) { }
 
-  // @UseGuards(JwtAuthGuard)
+  @UseGuards(JwtAuthGuard)
   @ApiOperation({ summary: 'Создание пользователя' })
   @ApiResponse({ status: 200, type: User })
   @Post()

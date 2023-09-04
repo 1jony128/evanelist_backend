@@ -11,6 +11,5 @@ export declare class AuthController {
     registration(userDto: CreateUserDto): Promise<{
         token: string;
         id: number;
-        updateAccessKey: string;
     }>;
 }

@@ -93,7 +93,7 @@ export class AuthService {
     return {
       token: token.token,
       id: user.id,
-      updateAccessKey: updateAccessKey,
+      // updateAccessKey: updateAccessKey,
     };
   }
 

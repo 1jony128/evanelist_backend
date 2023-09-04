@@ -75,7 +75,6 @@ let AuthService = class AuthService {
         return {
             token: token.token,
             id: user.id,
-            updateAccessKey: updateAccessKey,
         };
     }
     async generateToken(user) {
