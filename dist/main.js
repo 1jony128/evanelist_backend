@@ -6,6 +6,9 @@ const swagger_1 = require("@nestjs/swagger");
 const validation_pipe_1 = require("./pipes/validation.pipe");
 const fs_1 = require("fs");
 async function start() {
+    console.log('saddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd');
+    console.log('key', fs_1.readFileSync(process.env.PATH_KEY));
+    console.log('saddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd');
     const PORT = process.env.PORT || 5001;
     const app = await core_1.NestFactory.create(app_module_1.AppModule, {
         httpsOptions: {

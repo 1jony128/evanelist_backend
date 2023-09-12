@@ -7,6 +7,9 @@ import {ValidationPipe} from "./pipes/validation.pipe";
 import { readFileSync } from 'fs';
 
 async function start() {
+    console.log('saddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd')
+    console.log('key', readFileSync(process.env.PATH_KEY))
+    console.log('saddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd')
     const PORT = process.env.PORT || 5001;
     const app = await NestFactory.create(AppModule, {
         httpsOptions: {
