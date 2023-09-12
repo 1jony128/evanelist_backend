@@ -6,7 +6,12 @@ const swagger_1 = require("@nestjs/swagger");
 const validation_pipe_1 = require("./pipes/validation.pipe");
 async function start() {
     const PORT = process.env.PORT || 5001;
-    const app = await core_1.NestFactory.create(app_module_1.AppModule);
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, {
+        httpsOptions: {
+            key: readFileSync(env.process.PATH_KEY),
+            cert: readFileSync(env.process.PATH_SERT)
+        }
+    });
     app.enableCors();
     app.setGlobalPrefix('api');
     const config = new swagger_1.DocumentBuilder()

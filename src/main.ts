@@ -7,7 +7,12 @@ import {ValidationPipe} from "./pipes/validation.pipe";
 
 async function start() {
     const PORT = process.env.PORT || 5001;
-    const app = await NestFactory.create(AppModule);
+    const app = await NestFactory.create(AppModule, {
+        httpsOptions: {
+            key: readFileSync(env.process.PATH_KEY),
+            cert: readFileSync(env.process.PATH_SERT)
+        }
+    });
     app.enableCors();
     app.setGlobalPrefix('api')
     const config = new DocumentBuilder()
