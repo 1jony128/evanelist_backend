@@ -3867,7 +3867,7 @@
         "affectsGlobalScope": false
       },
       "../src/main.ts": {
-        "version": "686da706108f2501868112a571bef15bdfc79576523f69582086071765d84190",
+        "version": "fb7aaa311daf14358faf136b9e4b3c8c8eba061d77ccdc6e09f23b4969ec4968",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -7215,6 +7215,7 @@
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
         "../src/app.module.ts",
         "../src/auth/jwt-auth.guard.ts",
         "../src/pipes/validation.pipe.ts"

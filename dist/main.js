@@ -4,12 +4,13 @@ const core_1 = require("@nestjs/core");
 const app_module_1 = require("./app.module");
 const swagger_1 = require("@nestjs/swagger");
 const validation_pipe_1 = require("./pipes/validation.pipe");
+const fs_1 = require("fs");
 async function start() {
     const PORT = process.env.PORT || 5001;
     const app = await core_1.NestFactory.create(app_module_1.AppModule, {
         httpsOptions: {
-            key: readFileSync(env.process.PATH_KEY),
-            cert: readFileSync(env.process.PATH_SERT)
+            key: fs_1.readFileSync(process.env.PATH_KEY),
+            cert: fs_1.readFileSync(process.env.PATH_SERT)
         }
     });
     app.enableCors();

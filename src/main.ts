@@ -4,13 +4,14 @@ import {DocumentBuilder, SwaggerModule} from "@nestjs/swagger";
 import {JwtAuthGuard} from "./auth/jwt-auth.guard";
 import {ValidationPipe} from "./pipes/validation.pipe";
 
+import { readFileSync } from 'fs';
 
 async function start() {
     const PORT = process.env.PORT || 5001;
     const app = await NestFactory.create(AppModule, {
         httpsOptions: {
-            key: readFileSync(env.process.PATH_KEY),
-            cert: readFileSync(env.process.PATH_SERT)
+            key: readFileSync(process.env.PATH_KEY),
+            cert: readFileSync(process.env.PATH_SERT)
         }
     });
     app.enableCors();
