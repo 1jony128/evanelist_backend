@@ -14,8 +14,8 @@ import { AccessKeyService } from "access-key/access-key.service";
 import { Role } from "roles/roles.model";
 
 @Module({
-  controllers: [GroupController],
   providers: [GroupService, UserGroupService, AccessKeyService],
+  controllers: [GroupController],
   imports: [
     SequelizeModule.forFeature([User, UserGroups, Group, AccessKey, Role]),
     forwardRef(() => AuthModule),

@@ -25,8 +25,8 @@ let GroupModule = class GroupModule {
 };
 GroupModule = __decorate([
     common_1.Module({
-        controllers: [group_controller_1.GroupController],
         providers: [group_service_1.GroupService, user_groups_service_1.UserGroupService, access_key_service_1.AccessKeyService],
+        controllers: [group_controller_1.GroupController],
         imports: [
             sequelize_1.SequelizeModule.forFeature([users_model_1.User, user_groups_model_1.UserGroups, group_model_1.Group, access_key_model_1.AccessKey, roles_model_1.Role]),
             common_1.forwardRef(() => auth_module_1.AuthModule),

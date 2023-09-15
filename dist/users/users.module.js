@@ -31,9 +31,7 @@ UsersModule = __decorate([
             common_1.forwardRef(() => auth_module_1.AuthModule),
             files_module_1.FilesModule
         ],
-        exports: [
-            users_service_1.UsersService,
-        ]
+        exports: [users_service_1.UsersService]
     })
 ], UsersModule);
 exports.UsersModule = UsersModule;

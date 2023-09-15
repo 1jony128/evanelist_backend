@@ -3137,7 +3137,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/jwt-auth.guard.ts": {
-        "version": "3865962c1cf67caea957e5e0b24ff7385e0dfd3407b4d23dd8529da0c1554193",
+        "version": "d7427255506bd95a2b11acdd1d4a20104709128309e231348b084324f0b85b7a",
         "signature": "77fd8e43c0f1a5534f6c3fb1337ae290750d64b72abfb3d791feb1b2593cbb0b",
         "affectsGlobalScope": false
       },
@@ -3527,7 +3527,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.module.ts": {
-        "version": "5a24727905ef6fda7b851a67861efb454f1b361868b3933652c8d4f261e9cd7a",
+        "version": "16eb3cb82338fe9403a6e3d7c1e4088ea8608b2ca20e08d5346c61776af5a040",
         "signature": "aa1725e38b5a0b4009f6a74f296f173e7926c119a60454dbd2e523861735df69",
         "affectsGlobalScope": false
       },
@@ -3662,7 +3662,7 @@
         "affectsGlobalScope": false
       },
       "../src/group/group.module.ts": {
-        "version": "910499c70e3f9dbae99a23ddfca42c6a26bee7baf40ee89062301cf8eab617af",
+        "version": "5b973f6e9c2c3ae844143f4d57d1f01a3508526b232fed410361aa1f1ca9ed2d",
         "signature": "d4d84eb839e7ef0e034c56a02b76b863e49d055a18698cb2eb2c920f65982346",
         "affectsGlobalScope": false
       },
