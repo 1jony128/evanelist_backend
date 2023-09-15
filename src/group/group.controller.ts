@@ -61,8 +61,9 @@ export class GroupController {
     return this.groupService.getUserGroups(params.id);
   }
   
-  @Roles("ADMIN")
+  
   @UseGuards(JwtAuthGuard)
+  @Roles("ADMIN")
   @UseGuards(RolesGuard)
   @Get()
   findAll() {

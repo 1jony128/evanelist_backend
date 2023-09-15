@@ -107,8 +107,8 @@ __decorate([
     __metadata("design:returntype", String)
 ], GroupController.prototype, "getUserGroups", null);
 __decorate([
-    roles_auth_decorator_1.Roles("ADMIN"),
     common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
+    roles_auth_decorator_1.Roles("ADMIN"),
     common_1.UseGuards(roles_guard_1.RolesGuard),
     common_1.Get(),
     __metadata("design:type", Function),
