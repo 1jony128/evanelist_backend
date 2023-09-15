@@ -99,7 +99,6 @@ __decorate([
     __metadata("design:returntype", String)
 ], GroupController.prototype, "getGroupUsers", null);
 __decorate([
-    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     common_1.Get(":id/get-groups"),
     __param(0, common_1.Param()),
     __metadata("design:type", Function),
@@ -107,7 +106,6 @@ __decorate([
     __metadata("design:returntype", String)
 ], GroupController.prototype, "getUserGroups", null);
 __decorate([
-    common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     roles_auth_decorator_1.Roles("ADMIN"),
     common_1.UseGuards(roles_guard_1.RolesGuard),
     common_1.Get(),

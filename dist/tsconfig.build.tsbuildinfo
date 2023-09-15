@@ -3657,7 +3657,7 @@
         "affectsGlobalScope": false
       },
       "../src/group/group.controller.ts": {
-        "version": "6fa3b2a124c096b19ed4d862eeddb18ff27ed518b4b6a6ec97657bea13ccdbe9",
+        "version": "f758f6d24cd49a35fe047821cbaf7fbf5c1c1408b324d205b2b5c89e49432a1f",
         "signature": "01708283bf4fc31965eb048715f587a410bd02578a341fccbe4921318311306e",
         "affectsGlobalScope": false
       },

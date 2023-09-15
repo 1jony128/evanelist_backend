@@ -54,7 +54,7 @@ export class GroupController {
     return this.groupService.getGroupUsers(+params.id);
   }
 
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard)
   @Get(":id/get-groups")
   getUserGroups(@Param() params): string {
     // @ts-ignore
@@ -62,7 +62,7 @@ export class GroupController {
   }
   
   
-  @UseGuards(JwtAuthGuard)
+  // @UseGuards(JwtAuthGuard) 
   @Roles("ADMIN")
   @UseGuards(RolesGuard)
   @Get()
