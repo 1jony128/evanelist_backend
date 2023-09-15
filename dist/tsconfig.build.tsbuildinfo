@@ -3137,7 +3137,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/jwt-auth.guard.ts": {
-        "version": "d7427255506bd95a2b11acdd1d4a20104709128309e231348b084324f0b85b7a",
+        "version": "4c21623869df72acdcc73d35426765532afab0dd9838a619942bc50fe8bb3e5f",
         "signature": "77fd8e43c0f1a5534f6c3fb1337ae290750d64b72abfb3d791feb1b2593cbb0b",
         "affectsGlobalScope": false
       },
