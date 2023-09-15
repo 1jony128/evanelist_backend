@@ -3327,7 +3327,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/roles.guard.ts": {
-        "version": "0903fa5026ffa8d082f2deb91c753301800ec6de229d94ce46065c1ee43b47dc",
+        "version": "d64de86f3124d4a38e8c7fea662da048b127a3938f0e9596c08993fccb1f47a8",
         "signature": "798ab2c9cca8f2523941142668de7e5681a35a9686639613dcc292d4d18edd15",
         "affectsGlobalScope": false
       },
