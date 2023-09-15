@@ -26,6 +26,7 @@ let RolesGuard = class RolesGuard {
                 context.getClass(),
             ]);
             console.log(requiredRoles);
+            console.log('dassssssssssssssssssssssssssssssssssssssssssssssssssssssss');
             if (!requiredRoles) {
                 return true;
             }

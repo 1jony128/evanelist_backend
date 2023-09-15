@@ -24,6 +24,7 @@ export class RolesGuard implements CanActivate {
                 context.getClass(),
             ])
             console.log(requiredRoles)
+            console.log('dassssssssssssssssssssssssssssssssssssssssssssssssssssssss')
             if (!requiredRoles) {
                 return true;
             }
