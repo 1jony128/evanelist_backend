@@ -29,8 +29,8 @@ let RolesGuard = class RolesGuard {
                 return true;
             }
             const req = context.switchToHttp().getRequest();
-            console.log('RolesGuard req:', req);
             const authHeader = req.headers.authorization;
+            console.log('RolesGuard authHeader----------------------------------------------:', authHeader);
             console.log('authHeader: ', authHeader);
             const bearer = authHeader.split(' ')[0];
             const token = authHeader.split(' ')[1];
