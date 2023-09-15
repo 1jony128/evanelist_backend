@@ -3327,7 +3327,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/roles.guard.ts": {
-        "version": "90cd35c7eff43f9c13df575624f7fa4297a09658c3f0ddd220fdf0ca1b0e8740",
+        "version": "80f39db13ae41e2cbb54a08b7af5df604254d139f92b455d29aa4cbfbe7a3148",
         "signature": "798ab2c9cca8f2523941142668de7e5681a35a9686639613dcc292d4d18edd15",
         "affectsGlobalScope": false
       },
@@ -3662,7 +3662,7 @@
         "affectsGlobalScope": false
       },
       "../src/group/group.module.ts": {
-        "version": "6fd36cc80dad469600350077847560fbbc84b38188e5fcc4c43981149e23ec38",
+        "version": "910499c70e3f9dbae99a23ddfca42c6a26bee7baf40ee89062301cf8eab617af",
         "signature": "d4d84eb839e7ef0e034c56a02b76b863e49d055a18698cb2eb2c920f65982346",
         "affectsGlobalScope": false
       },
@@ -7180,6 +7180,7 @@
         "../src/group/group.controller.ts",
         "../src/group/group.service.ts",
         "../src/group/user-groups.service.ts",
+        "../src/roles/roles.model.ts",
         "../src/roles/roles.module.ts",
         "../src/users/users.model.ts",
         "../src/users/users.module.ts"

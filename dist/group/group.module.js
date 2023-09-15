@@ -20,6 +20,7 @@ const user_groups_service_1 = require("./user-groups.service");
 const roles_module_1 = require("../roles/roles.module");
 const access_key_model_1 = require("../access-key/entities/access-key.model");
 const access_key_service_1 = require("../access-key/access-key.service");
+const roles_model_1 = require("../roles/roles.model");
 let GroupModule = class GroupModule {
 };
 GroupModule = __decorate([
@@ -27,7 +28,7 @@ GroupModule = __decorate([
         controllers: [group_controller_1.GroupController],
         providers: [group_service_1.GroupService, user_groups_service_1.UserGroupService, access_key_service_1.AccessKeyService],
         imports: [
-            sequelize_1.SequelizeModule.forFeature([users_model_1.User, user_groups_model_1.UserGroups, group_model_1.Group, access_key_model_1.AccessKey]),
+            sequelize_1.SequelizeModule.forFeature([users_model_1.User, user_groups_model_1.UserGroups, group_model_1.Group, access_key_model_1.AccessKey, roles_model_1.Role]),
             common_1.forwardRef(() => auth_module_1.AuthModule),
             users_module_1.UsersModule,
             roles_module_1.RolesModule,
