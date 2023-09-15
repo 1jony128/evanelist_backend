@@ -21,6 +21,7 @@ const user_to_group_dto_1 = require("./dto/user-to-group.dto");
 const roles_guard_1 = require("../auth/roles.guard");
 const sign_group_dto_1 = require("./dto/sign-group.dto");
 const jwt_auth_guard_1 = require("../auth/jwt-auth.guard");
+const roles_auth_decorator_1 = require("../auth/roles-auth.decorator");
 let GroupController = class GroupController {
     constructor(groupService) {
         this.groupService = groupService;
@@ -106,6 +107,7 @@ __decorate([
     __metadata("design:returntype", String)
 ], GroupController.prototype, "getUserGroups", null);
 __decorate([
+    roles_auth_decorator_1.Roles("ADMIN"),
     common_1.UseGuards(jwt_auth_guard_1.JwtAuthGuard),
     common_1.UseGuards(roles_guard_1.RolesGuard),
     common_1.Get(),

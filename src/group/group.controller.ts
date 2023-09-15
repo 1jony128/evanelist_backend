@@ -15,6 +15,7 @@ import { UserGroupDto } from "group/dto/user-to-group.dto";
 import { RolesGuard } from "auth/roles.guard";
 import { SignGroupDto } from "group/dto/sign-group.dto";
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
+import { Roles } from "auth/roles-auth.decorator";
 
 @Controller("group")
 export class GroupController {
@@ -59,7 +60,8 @@ export class GroupController {
     // @ts-ignore
     return this.groupService.getUserGroups(params.id);
   }
-
+  
+  @Roles("ADMIN")
   @UseGuards(JwtAuthGuard)
   @UseGuards(RolesGuard)
   @Get()

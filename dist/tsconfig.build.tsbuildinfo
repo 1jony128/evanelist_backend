@@ -3657,7 +3657,7 @@
         "affectsGlobalScope": false
       },
       "../src/group/group.controller.ts": {
-        "version": "cbb55439a61c78a1ec37bf4f56e505eb94b268be9b253eec5756e3131a71f085",
+        "version": "96edbc61282cda38840a16e6823ab9dda03f78b7e0ebf666b1817498cb7448f1",
         "signature": "01708283bf4fc31965eb048715f587a410bd02578a341fccbe4921318311306e",
         "affectsGlobalScope": false
       },
@@ -7161,6 +7161,7 @@
       "../src/group/group.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/auth/jwt-auth.guard.ts",
+        "../src/auth/roles-auth.decorator.ts",
         "../src/auth/roles.guard.ts",
         "../src/group/dto/create-group.dto.ts",
         "../src/group/dto/sign-group.dto.ts",
