@@ -39,7 +39,8 @@ export class GroupController {
     return this.groupService.addUserToGroup(dto);
   }
 
-  @UseGuards(JwtAuthGuard)
+  @Roles("ADMIN")
+  @UseGuards(RolesGuard)
   @Get(":id/get-key-by-group")
   getAccessKeyByGroup(@Param() params): string {
     // @ts-ignore
