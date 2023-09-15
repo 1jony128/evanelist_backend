@@ -3137,7 +3137,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/jwt-auth.guard.ts": {
-        "version": "d3d60291b62ef963e945ec92c05e67d7186581693a1646ae58dc2b805d8de0d3",
+        "version": "3865962c1cf67caea957e5e0b24ff7385e0dfd3407b4d23dd8529da0c1554193",
         "signature": "77fd8e43c0f1a5534f6c3fb1337ae290750d64b72abfb3d791feb1b2593cbb0b",
         "affectsGlobalScope": false
       },
@@ -3327,7 +3327,7 @@
         "affectsGlobalScope": false
       },
       "../src/auth/roles.guard.ts": {
-        "version": "15db9e2fe409a11855e451755e6b830efd5a5fced0efcf45a10f242ed5fe6ed3",
+        "version": "90cd35c7eff43f9c13df575624f7fa4297a09658c3f0ddd220fdf0ca1b0e8740",
         "signature": "798ab2c9cca8f2523941142668de7e5681a35a9686639613dcc292d4d18edd15",
         "affectsGlobalScope": false
       },

@@ -22,7 +22,7 @@ let JwtAuthGuard = class JwtAuthGuard {
             const authHeader = req.headers.authorization;
             const bearer = authHeader.split(' ')[0];
             const token = authHeader.split(' ')[1];
-            console.log('JwtAuthGuard authHeader-----------------------------------------:', authHeader);
+            console.log('JwtAuthGuard authHeader', authHeader);
             if (bearer !== 'Bearer' || !token) {
                 throw new common_1.UnauthorizedException({ message: 'Пользователь не авторизован' });
             }
